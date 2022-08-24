@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>PokeAPI Sample Website</h2>
+      <div class="header-right">
+        <button class="next-btn" onclick="getNextPokemon()">Next</button>
+      </div>
+      <div class="header-left">
+        <button class="previous-btn" onclick="getPrevPokemon()">Previous</button>
+      </div>
+      <div class="header-middle">
+        <button class="next-btn" onclick="getPokemon()">Get first Pokemon</button>
+        <br>
+        <br>
+        <label for="searchBar">Search for a Pokemon by Id</label>
+        <input type="number" name="searchBar" id="searchBar" />
+        <button class="submit-btn" onclick="getPokemonById()">Submit</button>
+    </div>
+    </div>
+    <div class="flex-container">
+      <div id="pokeDiv" class="flex-item">
+        <div class="poke-div-content" id="pokeDivContent">
+          <p id="pokeId">id:</p>
+          <p id="pokeHeight">height:</p>
+          <p id="pokeWeight">weight:</p>
+          <p id="pokeType">type:</p>
+          <p id="pokeType2">type2:</p>
+          <p id="pokeHp">hp:</p>
+          <div class="container-bar">
+            <div id="hp-bar" class="hp-bar"></div>
+          </div>
+          <p id="pokeAtk">atk:</p>
+          <div class="container-bar">
+            <div id="atk-bar" class="atk-bar"></div>
+          </div>
+          <p id="pokeDef">def:</p>
+          <div class="container-bar">
+            <div id="def-bar" class="def-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-item">
+        <h2 class="poke-title" id="pokeName">name:</h2>
+        <img class="poke-img" id="pokeImg" src="" alt="pokeImg" />
+      </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
